@@ -4,7 +4,7 @@
 
 	// Agrega credenciales
 	MercadoPago\SDK::setAccessToken('TEST-7448852130109970-082217-984cc9aee821a0bfeede7b1016044f95-629974774');
-	
+	MercadoPago\SDK::setIntegratorId("dev_24c65fb163bf11ea96500242ac130004");
 	// Crea un objeto de preferencia
 	$preference = new MercadoPago\Preference();
 
@@ -39,6 +39,7 @@
 	  "installments" => 6
 	);
 	$preference->external_reference = "gonzalo@lavacoders.com";
+	$preference->notification_url: "https://pelasonny-mp-ecommerce-php-1.herokuapp.com/notificaciones.php",
 	$preference->items = array($item);
 	$preference->payer = $payer;
 	$preference->back_urls = array(

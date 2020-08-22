@@ -42,9 +42,9 @@
 	$preference->items = array($item);
 	$preference->payer = $payer;
 	$preference->back_urls = array(
-		"success" => "https://www.google.com.ar",
-		"failure" => "failure.html",
-		"pending" => "pending.html"
+		"success" => "https://pelasonny-mp-ecommerce-php-1.herokuapp.com/success.php",
+		"failure" => "https://pelasonny-mp-ecommerce-php-1.herokuapp.com/failure.php",
+		"pending" => "https://pelasonny-mp-ecommerce-php-1.herokuapp.com/pending.php"
 	);
 	$preference->auto_return = "approved";
 	$preference->save();

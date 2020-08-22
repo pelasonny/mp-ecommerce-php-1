@@ -1,0 +1,1 @@
+La compra no se ha completado!

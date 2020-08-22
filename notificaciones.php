@@ -8,7 +8,7 @@
 
 	http_response_code(200);
 
-	$fichero = 'webhook.txt';
+	$fichero = 'notificaciones.txt';
 	//$data = json_encode(var_export($_POST, TRUE));
 	$data = file_get_contents('php://input', true);
 

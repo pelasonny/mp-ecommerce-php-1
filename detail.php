@@ -74,7 +74,7 @@
 
     <link rel="stylesheet" href="./assets/fonts" media="">
 	
-	<script src="https://www.mercadopago.com/v2/security.js" view="checkout"></script>
+	<script src="https://www.mercadopago.com/v2/security.js" view="item"></script>
 	
     <style>
         .as-filter-button-text {

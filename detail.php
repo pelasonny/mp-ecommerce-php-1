@@ -13,13 +13,13 @@
 	$item->title = $_POST['title'];
 	$item->quantity = $_POST['unit'];
 	$item->unit_price = $_POST['price'];
-	$item->description = $_POST['price'];
-	$item->picture_url = $_POST['img'];
+	$item->description = "Dispositivo móvil de Tienda e-commerce";
+	$item->picture_url = $_SERVER['SERVER_NAME'].substr($_POST['img'],1);
 	$item->id="1234";
 	$payer = new MercadoPago\Payer();
 	$payer->email = "test_user_63274575@testuser.com";
 	$payer->first_name = "Lalo";
-	$payer->first_name = "Landa";
+	$payer->last_name = "Landa";
 	$payer->phone = array(
 		"area_code" => "11",
 		"number" => "22223333"

@@ -7,14 +7,15 @@
 	MercadoPago\SDK::setIntegratorId("dev_24c65fb163bf11ea96500242ac130004");
 	// Crea un objeto de preferencia
 	$preference = new MercadoPago\Preference();
-
+	
+	
 	// Crea un ítem en la preferencia
 	$item = new MercadoPago\Item();
 	$item->title = $_POST['title'];
 	$item->quantity = $_POST['unit'];
 	$item->unit_price = $_POST['price'];
 	$item->description = "Dispositivo móvil de Tienda e-commerce";
-	$item->picture_url = $_SERVER['SERVER_NAME'].substr($_POST['img'],1);
+	$item->picture_url = "https://pelasonny-mp-ecommerce-php-1.herokuapp.com/".substr($_POST['img'],1);
 	$item->id="1234";
 	$payer = new MercadoPago\Payer();
 	$payer->email = "test_user_63274575@testuser.com";
@@ -72,6 +73,9 @@
     <link rel="stylesheet" href="./assets/merch-tools.css" media="screen, print">
 
     <link rel="stylesheet" href="./assets/fonts" media="">
+	
+	<script src="https://www.mercadopago.com/v2/security.js" view="checkout"></script>
+	
     <style>
         .as-filter-button-text {
             font-size: 26px;

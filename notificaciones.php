@@ -6,6 +6,7 @@
 
   MercadoPago\SDK::setIntegratorId("dev_24c65fb163bf11ea96500242ac130004");
 
+
 	http_response_code(200);
 
 	$fichero = 'notificaciones.txt';

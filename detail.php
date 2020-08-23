@@ -39,7 +39,8 @@
 	  "installments" => 6
 	);
 	$preference->external_reference = "gonzalo@lavacoders.com";
-	$preference->notification_url = "https://pelasonny-mp-ecommerce-php-1.herokuapp.com/notificaciones.php?source_news=webhooks";
+	$preference->notification_url = $_SERVER['SERVER_NAME']."/notificaciones.php?source_news=webhooks";
+
 	$preference->items = array($item);
 	$preference->payer = $payer;
 	$preference->back_urls = array(
